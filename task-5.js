@@ -24,11 +24,11 @@ switch(country) {
     break;
 
   default:
-    price = 1
+    price = null
 }
 
-if (price != 1) {
-  alert(`Доставка в ${country} будет стоить ${price} кредитов`);
-} else {
+if (price === null) {
   alert('В вашей стране доставка не доступна');
+} else {
+  alert(`Доставка в ${country} будет стоить ${price} кредитов`);
 }
